@@ -1,10 +1,20 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom"
+import HomePage from "../pages/HomePage"
+import AboutUs from "../pages/AboutUs"
+import Contacts from "../pages/Contacts"
+import DefaultLayout from "./components/DefaultLayout"
 
 const App = () => {
   return (
-    <>
-    App
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route element={<DefaultLayout />}>
+        <Route path="/" element={<HomePage />}/>
+        <Route path="/chi-siamo" element={<AboutUs />}/>
+        <Route path="/contatti" element={<Contacts />}/>
+      </Route>
+      </Routes>
+    </BrowserRouter>
   )
 }
 
