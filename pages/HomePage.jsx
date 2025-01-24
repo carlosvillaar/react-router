@@ -1,4 +1,4 @@
-import MainNav from "../src/MainNav"
+import MainNav from "../src/components/MainNav"
 
 const HomePage = () => {
   return (

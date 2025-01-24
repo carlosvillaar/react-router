@@ -1,8 +1,10 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom"
+
+//pagine
+import DefaultLayout from "./components/DefaultLayout"
 import HomePage from "../pages/HomePage"
 import AboutUs from "../pages/AboutUs"
 import Contacts from "../pages/Contacts"
-import DefaultLayout from "./components/DefaultLayout"
 
 const App = () => {
   return (
