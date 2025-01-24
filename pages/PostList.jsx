@@ -24,24 +24,22 @@ const PostList = () => {
       <div className="container">
         <div className="row">
           {posts?.map((post) => (
-            <>
-              <div key={post?.id} className="col-12 my-3 col-md-4">
-                <div className="card h-100">
-                  <img
-                    className="my-3 ps-3 pe-3"
-                    src={post?.image}
-                    alt={post?.title}
-                  />
-                  <h4 className="my-3 ps-3 pe-3">{post?.title}</h4>
-                  <Link
-                    className="btn btn-sm btn-warning"
-                    to={`dettaglio-post/${post.id}`}
-                  >
-                    Visualizza
-                  </Link>
-                </div>
+            <div key={post?.id} className="col-12 my-3 col-md-4">
+              <div className="card h-100">
+                <img
+                  className="my-3 ps-3 pe-3"
+                  src={post?.image}
+                  alt={post?.title}
+                />
+                <h4 className="my-3 ps-3 pe-3">{post?.title}</h4>
+                <Link
+                  className="btn btn-lg btn-warning mt-3"
+                  to={`/posts/dettaglio-post/${post?.id}`}
+                >
+                  Visualizza
+                </Link>
               </div>
-            </>
+            </div>
           ))}
         </div>
       </div>
