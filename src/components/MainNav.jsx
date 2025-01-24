@@ -2,19 +2,32 @@ import { Link, NavLink } from "react-router-dom";
 
 function MainNav() {
   return (
-    <nav>
-      <ul className="list-unstyled d-flex gap-5 my-5 justify-content-center">
+    <nav className="bg-warning p-3">
+      <ul className="list-unstyled  d-flex gap-5 my-5 justify-content-center">
         <li>
-          <NavLink to="/">Home</NavLink>
+          <NavLink className={"text-decoration-none"} to="/">
+            Home
+          </NavLink>
         </li>
         <li>
-          <NavLink to="/chi-siamo">Chi siamo</NavLink>
+          <NavLink className={"text-decoration-none"} to="/chi-siamo">
+            Chi siamo
+          </NavLink>
         </li>
         <li>
-          <NavLink to="/contatti">Contatti</NavLink>
+          <NavLink className={"text-decoration-none"} to="/contatti">
+            Contatti
+          </NavLink>
         </li>
         <li>
-          <NavLink to="/posts">Lista dei Post</NavLink>
+          <NavLink className={"text-decoration-none"} to="/posts">
+            Lista dei Post
+          </NavLink>
+        </li>
+        <li>
+          <NavLink className={"text-decoration-none"} to="/crea-post">
+            Crea Nuovo
+          </NavLink>
         </li>
       </ul>
     </nav>

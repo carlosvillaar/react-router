@@ -7,6 +7,7 @@ import AboutUs from "../pages/AboutUs";
 import Contacts from "../pages/Contacts";
 import PostList from "../pages/PostList";
 import PostDetails from "../pages/PostDetails";
+import CreatePost from "../pages/CreatePost";
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
           <Route path="/chi-siamo" Component={AboutUs} />
           <Route path="/contatti" Component={Contacts} />
           <Route path="/posts" Component={PostList} />
+          <Route path="/crea-post" Component={CreatePost} />
           <Route path="/posts/dettaglio-post/:id" Component={PostDetails} />
         </Route>
       </Routes>

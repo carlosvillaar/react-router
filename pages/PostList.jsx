@@ -21,10 +21,11 @@ const PostList = () => {
 
   return (
     <>
-      <div className="container">
-        <div className="row">
+      <div className="container my-5">
+        <h1 className="text-center">Lista dei post</h1>
+        <div className="row mt-5">
           {posts?.map((post) => (
-            <div key={post?.id} className="col-12 my-3 col-md-4">
+            <div key={post?.id} className="col-12 my-4 col-md-4">
               <div className="card h-100">
                 <img
                   className="my-3 ps-3 pe-3"

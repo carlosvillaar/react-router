@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams, useNavigate, Link } from "react-router-dom";
 
 const PostDetails = () => {
   const { id } = useParams();
@@ -42,6 +42,7 @@ const PostDetails = () => {
             alt={posts?.title}
           />
           <h4 className="my-3 ps-3 pe-3">{posts?.title}</h4>
+          <h6 className="my-3 ps-3 pe-3">{posts?.tags.join(", ")}</h6>
           <p className="my-3 ps-3 pe-3">{posts?.content}</p>
         </div>
       </div>
@@ -50,7 +51,7 @@ const PostDetails = () => {
           Torna indietro
         </button>
         <button className="btn btn-lg btn-danger" onClick={handleDeletePizza}>
-          Elimina Post
+          Elimina post
         </button>
       </div>
     </>

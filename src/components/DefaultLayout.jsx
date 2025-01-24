@@ -11,7 +11,7 @@ function DefaultLayout() {
         <Outlet />
       </main>
       <footer>
-        <h4 className="text-center my-5">by me</h4>
+        <h4 className="text-center my-5">Realizzato da Carlos</h4>
       </footer>
     </>
   );
